@@ -55,6 +55,10 @@
                         {
                             const history = JSON.parse(this.responseText).history
                             
+
+                            const amount= document.getElementById('amount')
+                            amount.value = '';
+
                             assign_history(history)
                         }
                 }

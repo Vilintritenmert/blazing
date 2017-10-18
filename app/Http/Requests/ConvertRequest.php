@@ -28,7 +28,7 @@ class ConvertRequest extends FormRequest
         $prepared_currency = implode(',', array_keys($currency->list_of_currency()));
 
         return [
-            'amount' => 'required',
+            'amount' => 'required|between:0,'.PHP_INT_MAX,
             'from' => 'required|in:' . $prepared_currency,
             'to' => 'required|in:' . $prepared_currency
         ];
