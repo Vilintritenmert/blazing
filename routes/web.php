@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ConvertorController@show_page')->name('convertor.show_page');
+Route::post('/convert', 'ConvertorController@convert')->name('convertor.convert');

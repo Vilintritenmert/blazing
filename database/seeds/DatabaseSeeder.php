@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use SimpleCurrencies;
 
 class DatabaseSeeder extends Seeder
 {
